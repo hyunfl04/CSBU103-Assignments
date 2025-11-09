@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Cá Nhân - Hồng Pastel & Tulip</title>
+    <style>
+        /* Thiết lập màu sắc và font */
+        :root {
+            --mau-nen-chinh: #FFF0F5; /* Lavender Blush - Hồng phấn */
+            --mau-chu-chinh: #333;
+            --mau-diem-nhan: #FFC0CB; /* Pink - Hồng */
+            --mau-vien-ngoai: #F5E8E8; /* Gainsboro - Hồng xám nhạt */
+            --mau-tiep-xuc: #E6A0B8; /* Light Pink đậm hơn */
+            --mau-tieude-chinh: #C2185B; /* Deep Pink - Hồng đậm */
+            --mau-tieude-phu: #FF69B4; /* Hot Pink - Hồng nóng */
+            --font-chinh: 'Arial', sans-serif;
+            --font-tieude: 'Georgia', serif; /* Font có chân cho tiêu đề */
+
+        }
+        
+        body {
+            font-family: var(--font-chinh);
+            background-color: var(--mau-vien-ngoai);
+            color: var(--mau-chu-chinh);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-container {
+            width: 90%;
+            max-width: 900px;
+            background-color: var(--mau-nen-chinh);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* Vùng thông tin cá nhân (Sidebar) */
+        .cv-sidebar {
+            width: 35%;
+            background-color: var(--mau-diem-nhan);
+            color: white;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            position: relative; /* Cho phép đặt họa tiết nền */
+            background-image: url('Hình Vẽ Thỏ.jpg'); /* Họa tiết hoa tulip */
+            background-repeat: repeat;
+            background-size: 80px; /* Kích thước họa tiết */
+        }
+
+        /* Ảnh thẻ */
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-picture img {
+            width: 120px;
+            height: 120px;
+border-radius: 50%; /* Bo tròn thành ảnh thẻ */
+            object-fit: cover; /* Đảm bảo ảnh không bị méo */
+            border: 5px solid white; /* Viền trắng quanh ảnh */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cv-sidebar h2 {
+            color: white;
+            font-family: var(--font-tieude);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 10px;
+            margin-top: 25px;
+        }
+        
+        .contact-info p, .skills ul, .hobbies ul {
+            margin: 10px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .skills li {
+            background-color: var(--mau-tiep-xuc);
+            color: white;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            display: inline-block; /* Để các kỹ năng nằm trên cùng một dòng nếu đủ chỗ */
+            margin-right: 5px;
+        }
+
+        /* Vùng nội dung chính */
+        .cv-main {
+            width: 65%;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* Tiêu đề chính */
+        .cv-header h1 {
+            color: var(--mau-tieude-chinh);
+            font-family: var(--font-tieude);
+            margin-bottom: 5px;
+            font-size: 2.8em; /* To hơn một chút */
+        }
+
+        .cv-header p {
+            font-style: italic;
+            font-size: 1.2em; /* Lớn hơn */
+            color: #777;
+            margin-top: 0;
+        }
+
+        /* Các phần nội dung */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: var(--mau-tieude-phu);
+            font-family: var(--font-tieude);
+            border-bottom: 3px solid var(--mau-diem-nhan);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3, .education-item h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 1.3em; /* Lớn hơn */
+        }
+
+        .experience-item p, .education-item p {
+            margin: 0;
+            font-size: 1em;
+            color: #666;
+        }
+
+        .experience-item ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+        .experience-item ul li {
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <div class="cv-sidebar">
+            <div class="profile-picture">
+                <img src="c:\Users\PC\Downloads\UploadFromMobile\1000027708.jpg" alt="ID photo of Hoàng Thị Khánh Huyền">
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contact-information</h2>
+                <p><strong>Phone number:</strong> 0886967229</p>
+<p><strong>Email:</strong> florid3407@email.com</p>
+                <p><strong>Address:</strong> TP. Hồ Chí Minh</p>
+                <p><strong>LinkedIn:</strong> linkedin.com/in/hyunfl04</p>
+            </div>
+
+            <div class="section skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Effective communication</li>
+                    <li>Time management</li>
+                    <li>MS Office (Word, Excel, PPT)</li>
+                    <li>HTML & CSS cơ bản</li>
+                    <li>IELTS (B2)</li>
+                    <li>Creative thinking</li>
+                </ul>
+            </div>
+
+            <div class="section hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Watch movie </li>
+                    <li>Volleyball</li>
+                    <li>Technology</li>
+                    <li>Cooking</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="cv-main">
+            
+            <div class="cv-header">
+                <h1>Hoàng Thị Khánh Huyền</h1>
+                <p>Website design and development specialist</p>
+            </div>
+
+            <div class="section summary">
+                <h2>Career Objective</h2>
+                <p>Looking for an internship opportunity in web design and development to apply my knowledge, enhance my skills, and contribute to innovative projects.</p>
+            </div>
+
+            <div class="section education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>[University of information technology VNUHCM]</h3>
+                    <p>Bachelor's Degree in Computer Science (2025 - 2028)</p>
+                    <p>GPA: 3.5/4.0</p>
+                    <p>Graduation thesis: Research and design of smart vocabulary learning website"</p>
+                </div>
+            </div>
+
+            <div class="section experience">
+                <h2>Internship Experience</h2>
+                <div class="experience-item">
+                    <h3>Content Creator Intern - XYZ Company</h3>
+                    <p>June 2027 – December 2027</p>
+                    <ul>
+                        <li>Engineered and implemented new features for the flagship product using Python and the Django framework, adhering to RESTful API standards.</li>
+                        <li>Designed and maintained interactive data visualization dashboards in Tableau, enabling stakeholders to track key performance indicators (KPIs) in real-time.</li>
+                        <li>Translated UI/UX wireframes from Figma into clean, modular, and reusable front-end code components.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Postgraduate student</h3>
+                    <p>September 2027 – May 2028</p>
+                    <ul>
+                        <li>esigned and built a full-stack financial data visualization tool that retrieves stock data via a public API and stores it in a PostgreSQL database.</li>
+                        <li>Contributed to weekly research discussions, providing insights into model limitations and proposing avenues for algorithmic improvement.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
