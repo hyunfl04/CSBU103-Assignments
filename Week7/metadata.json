@@ -1,0 +1,5 @@
+{
+  "name": "Secure User Registration Portal",
+  "description": "A high-fidelity React registration application featuring real-time validation for email formatting and complex password requirements including numerical and special character constraints.",
+  "requestFramePermissions": []
+}
